@@ -157,6 +157,81 @@ footer {
 }
 
 /* ***************** Add media query for the 588px screen ***************** */
+@media (min-width: 588px) {
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-bottom: 0;
+        margin-left: 2rem;
+    }
+
+    form {
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+
+    form label {
+        flex-basis: 100%;
+    }
+
+    form input[id="email"] {
+        width: 18rem;
+        margin-bottom: 0;
+    }
+
+    form .btn {
+        width: auto;
+    }
+}
+/*980px*/
+
+@media (min-width: 980px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .btn-center {
+        justify-content: flex-start;
+    }
+
+    footer p {
+        max-width: 60ch;
+    }
+}
+
+
+/*1920px*/
+@media (min-width: 1920px) {
+
+    .container {
+        max-width: 1720px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem;
+        align-items: start;
+    }
+
+    footer .container {
+        text-align: center;
+    }
+}
 
 /* ***************** footer ***************** */
 
